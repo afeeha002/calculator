@@ -1,0 +1,80 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    width: 320px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0px 3px 15px rgba(113, 155, 119, 0.5);
+    background-color: #1a1a1d;
+    color: #ffffff;
+    border: 1px solid #717377;
+  }
+  
+  .display {
+    position: relative;
+    width: calc(100% - 40px);
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+  
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: transparent;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+  }
+  
+  .input {
+    min-height: 40px;
+  }
+  
+  .result {
+    font-size: 0.8em;
+    color: #bbb;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .buttons button {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 40%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, teansform 0.1s ease;
+  }
+  
+  .button button:active {
+    transform: scale(0.95);
+  }
+  
+  .buttons button.number {
+    background-color: #2e2b2b;
+    color: #fff;
+  }
+  
+  .buttons button.operator {
+    background-color: #464242;
+    color: #fff;
+  }
+  
+  .buttons button.clear {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .buttons button.equals {
+    background-color: #fb7c14;
+    color: #fff;
+  }
