@@ -11,7 +11,8 @@ const Calcu = () => {
 
     const handleCalculate = () => {
         try {
-            setOutput(eval(input).toString());
+            const sanitizedInput = input.replace(/\b0+(\d+)/g, '$1');
+            setOutput(eval(sanitizedInput).toString());
         } catch (error) {
             setInput('Error');
             setOutput('');
